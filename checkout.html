@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="check.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="home_nav">
+        <div id="nav_left">
+            <div><a href="" id="prop_details"><i id="arrow" class="far fa-arrow-left"></i>Property details</a></div>
+            <!-- <div id="prop"><a href="" id="prop_details">Property details</a></div> -->
+        </div>
+
+        <div id="nav_middle">
+            <img id="image" src="https://www.hometogo.com/assets/logo/logo-color.svg" alt="">
+        </div>
+
+        <div id="nav_right">
+            <ul id="list">
+
+
+                <li><a href=""> Do you need assistance?</a></li>
+                <li><a href="">Wish Lists</a></li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="main">
+        <div id="booking">
+            <div id="bookingbox">
+                <div class="progress_bar">
+                    <img src="https://i.ibb.co/Z12VNCK/Screenshot-2022-01-21-094430.png" alt="">
+
+    
+                </div> 
+
+
+                <div id="guest_accom">
+                    <p class="span_star"><i class="star fal fa-star"></i>
+                        <span id="span_text">Guests love this accomodation!</span>
+                        <span id="rating">It has a rating of 4.8.</span>
+                        <a href="#" id="cross"><i class="fal fa-times"></i></a>
+                    </p>
+
+                    <img src="" alt="">
+
+
+                </div>
+                <form id="form" onsubmit="usersDetails(event)">
+
+                    <h2 class="start_bookhead">Start your booking</h2>
+                    <p class="entry">Please enter your personal details</p>
+
+                    <div class="gender_details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <div class="gender_title">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Mr.</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Ms.</span>
+                            </label>
+
+                        </div>
+
+
+
+                    </div>
+                    <div id="first_last">
+                        <input type="text" id="name" placeholder="First name *" required>
+                        <input type="text" id="last_name" placeholder="Last name *" required>
+                    </div>
+
+                    <div id="emailAddress">
+                        <input type="text" id="email" placeholder="Email address *" required>
+                        <input type="text" maxlength="10" id="mobile" placeholder="Phone number *" required>
+                    </div>
+                    <div id="confirmation">
+                        <p class="email-con">We’ll send your confirmation to this email address</p>
+                        <p class="call">We’ll only call if we need to</p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Address *" id="address" required>
+                    </div>
+                    <div id="city_address">
+                        <input type="text" id="zip_code" placeholder="Zip code *" required>
+                        <input type="text" id="city" placeholder="City *" required>
+                        <select id="country"placeholder="Country">
+                            <option value="Country" selected disabled>Country *</option>
+                            <option value="">France</option>
+                            <option value="">Germany</option>
+                            <option value="">India</option>
+                            <option value="">Switzerland</option>
+                            <option value="">United States of America(the)</option>
+                            <option value="">United Kingdom Great Britain and Northern Ireland</option>
+                        </select>
+                    </div>
+
+                    <div id="checkbox">
+                        <input type="checkbox" id="tick">
+                        <label for="tick">I'd like to have exclusive deals sent right to my inbox</label>
+                    </div>
+
+                    <div class="button">
+                        <input  type="submit" value="Next >">
+
+                    </div>
+                    <div class="para_charged">
+                        You won't be charged yet
+                    </div>
+
+
+                </form>
+
+                <div id="cus_para">
+                    <p>What do our customers say about us?</p>
+                </div>
+
+                <div id="slide">
+                    <div class="slide_image">
+                        <div class="excellent">
+                            <p id="excel">Excellent</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </div>
+                            <div>
+                                <p class="avg">4.79
+                                    <span class="rate_avg">average</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="reviews">1,043
+                                    <span class="rate_review">reviews</span>
+                                </p>
+                            </div>
+                            <div class="image_review">
+                                <img src="https://assets.reviews.io/img/all-global-assets/logo/reviewsio-logo.svg"
+                                    alt="" width="60%">
+                            </div>
+                        </div>
+
+                        <div class="slideshow-container">
+                         
+                          </div>
+
+                          
+
+
+                    </div>
+                   
+
+                </div>
+
+                <div class="help">
+                    <div class="help-1">
+                        <div class="help-sub">
+                            <img src="https://cdn-icons.flaticon.com/png/512/169/premium/169780.png?token=exp=1642691482~hmac=03a692d5df6f1a1de92e6267d0526105"
+                                alt="" width="8%" height="20px">
+                            <h4>Secure data transmission</h4>
+                        </div>
+
+
+                        <div>
+                            <p>Safe and encrypted transfer of your payment data.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="help-1">
+                        <div class="help-sub">
+                            <img src="https://cdn-icons.flaticon.com/png/512/169/premium/169780.png?token=exp=1642691482~hmac=03a692d5df6f1a1de92e6267d0526105"
+                                alt="" width="8%" height="20px">
+                            <h4>We're here to help</h4>
+                        </div>
+
+                        <div>
+                            <p>Highly-rated customer support you can count on.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="help-1">
+                        <div class="help-sub">
+                            <img src="https://cdn-icons.flaticon.com/png/512/169/premium/169780.png?token=exp=1642691482~hmac=03a692d5df6f1a1de92e6267d0526105"
+                                alt="" width="8%" height="20px">
+                            <h4>Always the best available price</h4>
+                        </div>
+
+                        <div>
+                            <p>We compare 40,000+ vacation rental sites to find you the best deal.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="inq_para">
+                    <p>We only use your data to process inquiries and to inform you about our own products. You can
+                        object to the use of your e-mail address for sending product recommendations at any time without
+                        incurring any costs other than the transmission costs according to the basic rates.</p>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h2>Do you need assistance?</h2>
+                </div>
+
+                <div class="faq">
+                    <p>You can find <a href="#">answers to the frequently asked questions here</a> . If you have any
+                        additional questions, our customer service will be happy to help you.</p>
+                </div>
+
+                <div>
+                    <button id="button">Get help & support</button>
+
+                </div>
+
+ 
+
+
+
+            </div>
+            
+
+           
+
+        </div>
+        
+        <div id="prop_total">
+            <div class="details">
+                <div class="id_prop">PROPERTY ID:
+                    <span id="token">HRN4ZJK
+                    </span>
+                </div>
+                <div class="det_prop">
+                   <div>
+                    <h4 id="hotel_details"></h4>
+                    <p id="hotel_size"></p>
+                    <p id="loc"></p>
+                   </div>
+
+                    <img id="hotel_pic" src="" alt="" width="30%" height="100px">
+                </div>
+
+                <div class="guest_Details">
+                    <p id="check-out-details"></p>
+                    <p id="no-guests"></p>
+                </div>
+                <div class="breakdown">
+                    <div id="value"></div>
+                    <div>Including taxes and free</div>
+                    <div class="policy"><i class=" shield far fa-shield-check"></i><a href=""
+                            class="cancellation_policy">View cancellation policy</a>
+                    </div>
+
+ 
+                    <div>
+                        <button class="cost">View cost breakdown</button>
+                        
+                    </div>
+
+                   
+                </div>
+
+
+            </div>
+        </div>
+
+
+        
+
+    </div>
+    <div class="end">
+        <div class="e1">
+            <h3>HOMETOGO </h3>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Investors</p>
+            <p>HomeToGo Stock</p>
+            <p>App</p>
+            <p>Insight</p>
+            <p>Press</p>
+            <p>Inspiration</p>
+            <img class="e11" src="https://www.hometogo.com/assets/logo/logo-color.svg"
+            width="60" height="30">
+        </div>
+        <div  class="e2">
+            <h3>CONTACT</h3>
+            <p>Press</p>
+            <p>Help Centre and Contact</p>
+            <p>Become a Parnter</p>
+            <p>Sign-Up as a Host</p>
+        </div>
+        <div  class="e3">
+            <h3>PRIVACY & TERMS</h3>
+            <p>Terms of Serivce</p>
+            <p>Privacy Policy</p>
+            <p>Legal</p>
+        </div>
+    </div>
+    
+    
+
+</body>
+<script src="checkout.js"></script>
+
+</html>
+

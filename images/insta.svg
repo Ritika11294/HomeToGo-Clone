@@ -1,0 +1,12 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" rx="2" fill="url(#instagram_svg__instagram_svg__paint0_linear)"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.618 4h6.764C17.922 4 20 6.052 20 8.558v6.746c0 2.507-2.077 4.558-4.617 4.558H8.617c-2.54 0-4.618-2.05-4.618-4.558V8.558C4 6.052 6.078 4 8.618 4zm3.339 3.648a4.473 4.473 0 1 1-4.472 4.472 4.473 4.473 0 0 1 4.472-4.472zm0 1.51a2.962 2.962 0 1 1-.002 5.925 2.962 2.962 0 0 1 .002-5.924zm4.326-2.13a.726.726 0 1 1 0 1.453.726.726 0 0 1 0-1.452zM9.171 5.297h5.66c2.124 0 3.862 1.73 3.862 3.842v5.688c0 2.114-1.738 3.843-3.863 3.843H9.17c-2.124 0-3.863-1.73-3.863-3.843V9.138c0-2.113 1.739-3.842 3.864-3.842z" fill="#fff"/>
+    <defs>
+        <linearGradient id="instagram_svg__instagram_svg__paint0_linear" y1="28.2" x2="27.48" y2="-2.52" gradientUnits="userSpaceOnUse">
+            <stop offset=".052" stop-color="#FEDA77"/>
+            <stop offset=".478" stop-color="#DD2A7B"/>
+            <stop offset=".78" stop-color="#8134AF"/>
+            <stop offset="1" stop-color="#515BD4"/>
+        </linearGradient>
+    </defs>
+</svg>

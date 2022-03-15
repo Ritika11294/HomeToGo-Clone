@@ -1,0 +1,30 @@
+/* .ankitSachin{
+    border: 2px solid red;
+} */
+.mainWalaDiv{
+    height:85%;
+    width: 100%;
+    display: flex;
+    /* margin-top: px; */
+}
+.mainImg{
+    width: 50%;
+    /* border: 2px dashed black; */
+    margin-top: 10px;
+}
+.besideImg{
+    width: 50%;
+    /* border: 2px dashed black; */
+    margin-top: 10px;
+display: grid;
+
+}
+.sa2{
+    width: 100%;
+    height: 100%;
+}
+
+.maindiv4{
+    display: flex;
+    justify-content: space-between;
+}

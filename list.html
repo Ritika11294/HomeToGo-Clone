@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="list.css">
+  <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header" >
+        <!-- <div ><a href="/home.html"><img src="https://cdn-icons-png.flaticon.com/512/271/271218.png" width="15" height="15" > Search</a> </div> -->
+        <div class="h1"><a href="./search.html" ><i id="arrow" class="far fa-arrow-left"></i>Search</a></div>
+
+        <div class="h2"> <a href="./index.html">
+            <img  src="https://www.hometogo.com/assets/logo/logo-color.svg"
+            width="150" height="40">
+         </a></div>
+    </div>
+    <div class="info">
+        <div class="info1">
+            <h2>Do you want to join one of the fastest-growing distribution networks in the industry?</h2>
+            <p>With just a few clicks, you can list your property on HomeToGo which has the world's largest selection of vacation rentals with millions of offers. Thousands of partners already trust the HomeToGo Group to increase their bookings and diversify their revenues. With our powerful reach and international audience, our HomeToGo brands ensure an unmatched online visibility so our partners can attract and retain travelers.</p>
+        </div>
+        <div class="info2">
+            <div class="images">
+                <img src="https://www.hometogo.com/assets/logo/logo-color.svg" width='100' height='30'>
+                <img src="https://www.hometogo.com/assets/casamundo/default/logo/logo.svg" width='100' height='30' >
+                <img src="https://www.hometogo.com/assets/tripping/default/logo/logo.svg" width='100' height='30' >
+                <img src="https://www.hometogo.com/assets/wimdu/default/logo/logo.svg" width='100' height='30' >
+            </div>
+            <div>
+                <p>Do you own or distribute vacation rentals and are interested in listing your properties with us?</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+    <div class="flow">
+        <img src="https://i.ibb.co/6yrJWrh/Screenshot-2022-01-19-105644.png" width="800" height="600">
+    </div>
+
+    <div class="line">
+        <h2>Do you have questions about your partnership with HomeToGo?</h2>
+        <p>Please send us an e-mail with your question and we will get back to you as soon as possible.</p>
+    </div>
+    <div class="details">
+        <form onsubmit="property(event)">
+            <h3>Property Information</h3>
+            <hr class="hr">
+            <label >Property Name:</label> <br> <input type="text" class="name"><br>
+            <label >Location:</label> <br> <input type="text" class="location"><br>
+            <label>Features:</label> <br> <input type="text" class="feature"><br>
+            <label>Price:</label> <br> <input type="text" class="price"><br>
+  
+            <label>Images:</label> <br> <input type="text" class="img0"><br>
+            <label>Images:</label> <br> <input type="text" class="img1"><br>
+            <label>Images:</label> <br> <input type="text" class="img2"><br>
+            <label>Images:</label> <br> <input type="text" class="img3"><br>
+            <label>Images:</label> <br> <input type="text" class="img4"><br>
+            <label>Images:</label> <br> <input type="text" class="img5"><br>
+
+            <button >Submit</button>
+        </form>
+    </div>
+
+    <div class="adv">
+        <div class="adv1"><p>Do you advertise your vacation rentals online and want to cooperate with HomeToGo via another platform?
+            We collaborate with some of the largest travel listing platforms in the market. Here's some more information on our partners' subscription rates and fees:</p>
+        </div>
+       <div class="adv2">
+        <div class="adv21">
+            <p>PARTNERS</p>
+            <p>ANNUAL SUBSCRIPTIONS</p>
+            <p>COMMISION</p>
+            <img src="https://www.hometogo.com/images/provider-children/smoobu.png" width="120" height="50">
+            <p class="p1">Starts at €19/month</p>
+            <p class="p2">None</p>
+            <img src="https://cdn.hometogo.net/assets/media/pics/216_90/6053435ecdee8.png" width="120" height="50" >
+            <p class="p1">None</p>
+            <p class="p2">8% Partner fee + Traveler Service Fee</p>
+            <img src="https://www.hometogo.com/images/provider-children/eDomizil.png?" width="120" height="50" >
+            <p class="p1">None</p>
+            <p class="p2">19.5% Booking Fee</p>
+        </div>
+        <div class="adv22">
+          <button class="b1">List Your Rentals</button>
+          <button class="b1">List Your Rentals</button>
+          <button class="b1">List Your Rentals</button>
+        </div>
+    </div>
+</div>
+<div class="end">
+    <div class="e1">
+        <h3>HOMETOGO </h3>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Investors</p>
+        <p>HomeToGo Stock</p>
+        <p>App</p>
+        <p>Insight</p>
+        <p>Press</p>
+        <p>Inspiration</p>
+        <img class="e11" src="https://www.hometogo.com/assets/logo/logo-color.svg"
+        width="60" height="30"">
+    </div>
+    <div  class="e2">
+        <h3>CONTACT</h3>
+        <p>Press</p>
+        <p>Help Centre and Contact</p>
+        <p>Become a Parnter</p>
+        <p>Sign-Up as a Host</p>
+    </div>
+    <div  class="e3">
+        <h3>PRIVACY & TERMS</h3>
+        <p>Terms of Serivce</p>
+        <p>Privacy Policy</p>
+        <p>Legal</p>
+    </div>
+</div>
+  
+</body>
+</html>
+<script>
+
+    async function property(e){
+        try {
+            e.preventDefault()
+      var name=document.querySelector('.name').value
+      var feature=document.querySelector('.feature').value
+      var location=document.querySelector('.location').value
+      var price=document.querySelector('.price').value
+
+      var img0=document.querySelector('.img0').value
+      var img1=document.querySelector('.img1').value
+      var img2=document.querySelector('.img2').value
+      var img3=document.querySelector('.img3').value  
+      var img4=document.querySelector('.img4').value
+      var img5=document.querySelector('.img5').value
+
+     var prop_obj={
+         propertyName:name,
+         features:feature,
+         location:location,
+         price:price,
+
+         imgUrl:img0,
+         images:[img1,img2,img3,img4,img5]
+     }
+
+     prop_obj=JSON.stringify(prop_obj)
+
+        } catch (error) {
+            console.log(error)
+        }
+
+        let api=`https://home2gowebapi.herokuapp.com/properties/postData`
+
+        let response=await fetch(api,{
+            method:"POST",
+            body:prop_obj,
+            headers:{
+                "Content-Type":"application/json"
+            }
+        })
+      
+        let data=await response.json()
+        console.log("data",data)
+
+         alert("Successfully added!!");
+
+
+
+
+
+
+
+
+
+
+
+    
+
+   
+
+    }
+</script>

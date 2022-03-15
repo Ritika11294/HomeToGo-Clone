@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="check.css">
+</head>
+
+<!-- <style>
+
+#myform h4{
+    color: #7c706f;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-left: 1px;
+   
+    
+}
+
+
+#myform h2{
+    margin-top: 5px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.display_img{
+    display: flex;
+    width: 25%;
+    height: 60px;
+    margin-left: 1px;
+    margin-top: -20px;
+}
+.credit_details{
+    margin-top: 5px;
+    margin-left: 1px;
+    color: #7c706f;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#credit{
+    width: 95%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #d2d2d2;
+
+}
+
+.credit-details2{
+    display: flex;
+}
+
+.credit-details2 > div{
+    flex:1;
+    color: #7c706f;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.credit-details3 input{
+   /* width: 45%; */
+   padding: 12px;
+   margin-right: 13px;
+   margin-top: 10px;
+   border: 1px solid #d2d2d2;
+
+}
+
+#cd1{
+width: 35%;
+}
+
+#cd2{
+    width: 54%;
+}
+
+.main_box{
+    display: flex;
+        height: 1020px;
+        gap: 20px;
+}
+
+
+</style> -->
+
+<body>
+    <div id="home_nav">
+        
+
+        <div id="nav_middle">
+            <img id="image" src="https://www.hometogo.com/assets/logo/logo-color.svg" alt="">
+        </div>
+
+      
+    </div>
+
+   
+    <div class="main_box">
+        <div id="booking">
+            <div id="bookingbox">
+                <div class="progress_bar">
+                    <img src="https://i.ibb.co/yBywZkK/Screenshot-2022-01-21-201447.png" alt="">
+
+    
+                </div> 
+
+
+                <div id="guest_accom">
+                    <p class="span_star"><i class="star fal fa-star"></i>
+                        <span id="span_text">Guests love this accomodation!</span>
+                        <span id="rating">It has a rating of 4.8.</span>
+                        <a href="#" id="cross"><i class="fal fa-times"></i></a>
+                    </p>
+
+                    
+                    
+
+                </div>
+                
+                <form id="myform" onsubmit="paymentDone(event)">
+                    <h2>Complete the payment</h2>
+
+                    <div class="pay">
+                        <h4>Payment methods</h4>
+                    </div>
+
+                    <div class="display_img">
+                        <img src="https://ecoheater.ie/wp-content/uploads/2018/10/cards-.jpg
+                        " alt="">
+                    </div>
+
+                    <div class="credit_details1">
+                        <div>Credit card number</div>
+                        <input type="text" maxlength="16" placeholder="Credit card number" id="credit" required>
+                    </div><br>
+                    <div class="credit-details2">
+                       <div>Expiration Date</div>
+                       <div>CVV(security code)</div>
+                    </div>
+                    <div class="credit-details3">
+                        <input type="month" placeholder="MM/YY" id="cd1" required>
+                        
+                        <input type="text" maxlength="3" placeholder="CVV(security code)" id="cd2" required>
+                    </div>
+
+                    
+                    <div class="button">
+                        <input type="submit" value="Proceed to Pay">
+                    </div>
+                        
+
+                </form>
+
+                <div id="cus_para">
+                    <p>What do our customers say about us?</p>
+                </div>
+
+                <div id="slide">
+                    <div class="slide_image">
+                        <div class="excellent">
+                            <p id="excel">Excellent</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </div>
+                            <div>
+                                <p class="avg">4.79
+                                    <span class="rate_avg">average</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="reviews">1,043
+                                    <span class="rate_review">reviews</span>
+                                </p>
+                            </div>
+                            <div class="image_review">
+                                <img src="https://assets.reviews.io/img/all-global-assets/logo/reviewsio-logo.svg"
+                                    alt="" width="60%">
+                            </div>
+                        </div>
+
+                        <div class="slideshow-container">
+                          </div>
+                          
+
+
+                    </div>
+                   
+
+                </div>
+
+                <div class="help">
+                    <div class="help-1">
+                        <div class="help-sub">
+                            <img src="https://cdn-icons.flaticon.com/png/512/169/premium/169780.png?token=exp=1642691482~hmac=03a692d5df6f1a1de92e6267d0526105"
+                                alt="" width="8%" height="20px">
+                            <h4>Secure data transmission</h4>
+                        </div>
+
+
+                        <div>
+                            <p>Safe and encrypted transfer of your payment data.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="help-1">
+                        <div class="help-sub">
+                            <img src="https://cdn-icons.flaticon.com/png/512/169/premium/169780.png?token=exp=1642691482~hmac=03a692d5df6f1a1de92e6267d0526105"
+                                alt="" width="8%" height="20px">
+                            <h4>We're here to help</h4>
+                        </div>
+
+                        <div>
+                            <p>Highly-rated customer support you can count on.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="help-1">
+                        <div class="help-sub">
+                            <img src="https://cdn-icons.flaticon.com/png/512/169/premium/169780.png?token=exp=1642691482~hmac=03a692d5df6f1a1de92e6267d0526105"
+                                alt="" width="8%" height="20px">
+                            <h4>Always the best available price</h4>
+                        </div>
+
+                        <div>
+                            <p>We compare 40,000+ vacation rental sites to find you the best deal.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="inq_para">
+                    <p>Your payment data is collected and processed securely via a PCI-compliant payment service provider. To verify and authenticate your data in the 3D-secure-procedure, you may be redirected to your bank.</p>
+                </div>
+
+ 
+
+
+
+            </div>
+            
+
+           
+
+        </div>
+        
+        
+        <div id="prop_total">
+            <div class="details">
+                <div class="personal_details">
+                    <h4>PERSONAL DETAILS</h4>
+                    <h4 id="names"></h4>
+                    <p id="other_details"></p>
+                </div>
+                <div class="id_prop">PROPERTY ID:
+                    <span id="token">H4ABVDY</span>
+                </div>
+                <div class="det_prop">
+                    <div>
+                        <h4 id="hotel_details"></h4>
+                        <p id="hotel_size"></p>
+                        <p id="loc"></p>
+                    </div>
+                    <img id="hotel_pic" src="" alt="" width="30%" height="100px">
+                </div>
+                <div class="guest_Details">
+                    <p id="check-out-details"></p>
+                    <p id="no-guests"></p>
+                </div>
+                <div class="breakdown">
+                    <div id="value"></div>
+                    <div>Including taxes and free</div>
+                    <div class="policy"><i class=" shield far fa-shield-check"></i><a href=""
+                            class="cancellation_policy">View cancellation policy</a>
+                    </div>
+
+
+                    <div>
+                        <button class="cost" onclick=>View cost breakdown</button>
+                        <!-- <div id="open_cost"></div> -->
+                        
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        
+
+    </div>
+    <div class="end">
+        <div class="e1">
+            <h3>HOMETOGO </h3>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Investors</p>
+            <p>HomeToGo Stock</p>
+            <p>App</p>
+            <p>Insight</p>
+            <p>Press</p>
+            <p>Inspiration</p>
+            <img class="e11" src="https://www.hometogo.com/assets/logo/logo-color.svg"
+            width="60" height="30">
+        </div>
+        <div  class="e2">
+            <h3>CONTACT</h3>
+            <p>Press</p>
+            <p>Help Centre and Contact</p>
+            <p>Become a Parnter</p>
+            <p>Sign-Up as a Host</p>
+        </div>
+        <div  class="e3">
+            <h3>PRIVACY & TERMS</h3>
+            <p>Terms of Serivce</p>
+            <p>Privacy Policy</p>
+            <p>Legal</p>
+        </div>
+    </div>
+</body>
+<script src="checkout3.js"></script>
+</html>

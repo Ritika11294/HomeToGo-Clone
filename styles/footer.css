@@ -1,0 +1,36 @@
+#footer {
+  background: #f4f4f4;
+  margin-top: 100px;
+}
+
+#footer_inner {
+  width: 65%;
+  margin: 0px auto;
+  padding: 50px 0px;
+  display: flex;
+}
+
+#footer_inner > div {
+  width: 200px;
+}
+
+#footer_inner > div > ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#footer_inner > div > ul > li {
+  color: #707070;
+  padding: 7px 0px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+#footer_inner > div > ul > li > img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+#footer_inner > div > img {
+  width: 80px;
+}

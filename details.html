@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="details.css">
+    <link href='https://css.gg/bolt.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+</head>
+<body>
+    <div id="nav">
+        <div><a href="search.html"><i class="fas fa-arrow-left"></i>Results</a></div>
+        <div>
+           <a href="index.html"> <img src="	https://www.hometogo.com/assets/logo/logo-color.svg" alt=""></a>
+        </div>
+        <div class="flex">
+            <div onclick="SHOW()">Do you need assistance?</div>
+            <div><a href="#">Wish List</a></div>
+        </div>
+    </div>
+ 
+ 
+  <div class="flex">
+    <div id="images_Display">
+        <div id="image">
+            <img src="" alt="" id="main_image">
+        </div>
+        <div id="images">
+           
+        </div>
+    </div>
+    
+    <div id="left">
+      <div style="display:flex;height:55px;" class="border-bottom">
+                           <!--  -->
+          <div>
+            <p style="color:grey;font-size: 14px;padding-left:20px;font-weight: 700;">PROPERTY ID : <span style="Font-size: 14px;
+                Font-weight: 700;
+                /* Line-height: 20px; */
+                color:black">HRN4ZJK</span></p>
+          </div>
+          <!--  -->
+          <div>
+            <div><i class="far fa-share-square"style="font-size=25px;margin-top:10px;margin-left:20px""></i></div>
+            <div style="margin-left:10px">share</div>
+        </div>
+        <!--  -->
+        <div>
+            <div><i class="far fa-heart"style="font-size=25px;margin-top:10px;margin-left:25px"></i></div>
+            <div style="margin-left:10px">Wishlist</div>
+        </div>
+        <!--  -->
+      </div>
+                            <!--  -->
+        <div class="border-bottom" style="height:130px;font-size:14px;padding:5px 10px;line-height: 12px;">
+        <h3 id="name"></h3>
+        <p id="location"></p>
+        <p id="details"></p>
+        <p class="same" style="color:orange; background-color:#ffeedf;margin:0 0 0 -10px;width:100%;
+        padding:5px 10px;height:25px">Choose dates for accurate prices</p>
+        </div>
+        <!--  -->
+        <div class="flex border-bottom">
+            <input type="text" id="date1"placeholder="Check In" style="font-size: 22px;text-align: center ;padding:5px 0 ;" onchange="date(event,this.value)">
+            <input type="text" id="date2"placeholder="Check IN" style="font-size: 22px;text-align: center ;padding:5px 0 ;"  onchange="date(event,this.value)">
+        </div>
+        <!--  -->
+        <div id="count_div" >
+            <p class="childs">Guests</p>
+            <p class="childs border-bottom"  id="people_count">0 Guests(0 adults,0 childrens) <i class="fas fa-chevron-down" style="margin-left: 15px;"></i>
+            </p>
+        </div>
+        <!--  -->
+        <div class="flex" style="justify-content: space-around;margin-top:-10px;">
+            <p class="same" style="color:black">Price per night </p>
+            <p id="price"></p>
+        </div>
+      </div>
+      <div id="hidden">
+        <div style="display:flex;justify-content:right;">    <i class="fas fa-times" style="font-size: 25px;" onclick="HIDE()"></i>
+        </div>
+    <div id="scroll">
+        <img style="
+        margin-top: 30px;
+    border-radius:50%;
+    height:50px;
+    width:50px
+    "src="https://www.hometogo.com/images/pinboardBadge.png" alt="">
+        <h2 style="line-height: 0;">Hi! I am Laura</h2>
+    <p style="color:grey;font-size: 14px;">Help for Property ID : <span style="Font-size: 14px;
+        Font-weight: 700;
+        Line-height: 20px;
+        color:black">HRN4ZJK</span></p>
+    <p style="font-size:14px;font-weight: 700;line-height: 12px;color: grey;margin: 30px 0;">FREQUENTLY ASKED QUESTIONS</p>
+    <p class="block">Where can I find more information on the current COVID-19 restrictions and policies?</p>
+    <p class="hide">In case of an official travel ban, several of our partners have set up special change procedures for bookings. If one of these changes applies to your booking, you will be contacted by your local partner proactively.
+        During this time of uncertainty and ever changing rules, we strongly recommend following publicly available information and your government’s travel guidelines as well as those of the destination country.
+        For foreign travel advice, please have a look here
+        We have also collected information on travel restrictions that can be found here: https://www.hometogo.com/media/covid-19/#Information
+        If you prefer to have full flexibility, we suggest booking a property that accepts free cancellation - when searching, enter the desired travel dates and then select the 'Free cancellation' filter.</p>
+    <p class="block">What are the cancellation policies for this property?</p>
+    <p class="hide">The cancellation terms of the partner will continue to apply. You'll find them under the “Terms and conditions" section after entering the desired travel dates.</p>
+    <p class="block">Is the property available for my dates?</p>
+    <p class="hide">Please select your dates for accurate availability and prices.</p>
+    <p class="block">What is the price for my dates?</p>
+    <p class="hide">Please select your dates for accurate availability and prices.
+    </p>
+    <p class="block">Are there any extra costs to pay?</p>
+    <p class="hide">You can find any extra costs listed on the property description and in the cost breakdown. You’ll also get an overview in the booking details part of your confirmation email. Please select your dates for an accurate overview.
+    </p>
+    <p class="block">Is there pets allowed</p>
+    <p class="hide">Unfortunately, no pets are allowed on this property.</p>
+    </div>
+    <div id="last">
+        <div style="display:flex;justify-content: space-between;"><p>Couldn’t find the answer to your question?</p>
+            <div>
+                <i class="far fa-comment-alt"></i><i class="far fa-envelope-open"></i>
+            </div></div>
+            <button>
+                Visit our help center
+            </button>
+    </div>
+      </div>
+
+
+      <div id="dates">
+          <p>Hello,</p>
+          <h3>You cannot choose the dates between the below dates</h3>
+       <p> => Only from today and After today</p>
+      </div>
+</div>
+<button id="button" onclick="theGoodPart()" >Check Availability</button>
+<button id="msg"title="Book without waiting for approval" style="display:flex"><i class="gg-bolt" style="color:green"></i> <p> Instant Conformation</p></button>
+
+<div class="under" >
+<p class="same" id="title"></p>
+<h3 style="line-height:0" id="width">2600 ft² Villa</h3>
+<div class="flex border-bottom">
+<p class="same">OVERVIEW</p>
+<div class="grid" class="flex">
+<p class="childs"><i class="fas fa-door-open"></i> 1 bedroom</p>
+<p class="childs"><i class="fas fa-users"></i> Max.4 guests</p>
+<p class="childs"><i class="fas fa-home"></i> Condo</p>
+<p class="childs"><i class="fas fa-shower"></i> 2Bathrooms</p>
+<p class="childs"><i class="fas fa-dog"></i> Pets not allowed</p>
+<p class="childs"></p>
+
+</div>
+</div>
+</div>
+<div class="border-bottom flex under">
+    <p class="same">AMENITIES</p>
+    <div class="grid">
+      <p class="childs"><i class="fas fa-swimming-pool"></i> Sharepool</p>
+      <p class="childs"><i class="fas fa-glass-martini"></i> DishWasher</p>
+      <p class="childs"><i class="fad fa-dryer-alt"></i> Washer</p>
+      <p class="childs"><i class="fas fa-tv"></i> TV</p>
+      <p class="childs"><i class="fas fa-air-conditioner"></i> Air Conditioner</p>
+      <p class="childs"><i class="fas fa-wifi"></i> Internet</p>
+      <p class="childs"><i class="fas fa-microchip"></i> Microwave</p>
+      <p class="childs"><i class="fas fa-dog"></i> Pets not allowed</p>
+      <p class="childs"><i class="fas fa-smoking-ban"></i> No Smoking</p>
+      <p class="childs"><i class="fas fa-sink"></i> Kitchen</p>
+      <p class="childs"><i class="fas fa-user-friends"></i> Family Friends</p>
+      <p class="childs"><i class="fas fa-dumbbell"></i>fitness</p>
+      <p class="childs"><i class="fas fa-parking"></i> Parking</p>
+      <p class="childs"><i class="fab fa-accusoft"></i> dryers</p>
+      <p class="childs"><i class="fal fa-refrigerator"></i> fridge</p>
+      <p class="childs"><i class="fas fa-cookie-bite"></i> snacks</p>
+      <p class="childs"><i class="fas fa-bed"></i> beds</p>
+      <p class="childs"><i class="fas fa-golf-ball"></i> golf</p>
+      <p class="childs"><i class="fas fa-umbrella-beach"></i> beach Access</p>
+      <p class="childs"><i class="fas fa-fire-extinguisher"></i>Fire-extinguisher</p>
+    </div>
+</div>
+<div class="flex border-bottom under">
+    <p class="same" style="margin-right: 20px;">SAFETY & HYGIENE MEASURES</p>
+    <p class="childs"><i class="fas fa-tint"></i>  Use of highly effective cleaning agents to sanitize surfaces</p>
+</div>
+<div class="flex border-bottom under" >
+    <p class="same">ROOM INFORMATION</p>
+    <div class="flex grid">
+ <div class="shadow" style="margin-bottom: 20px;">
+      <h4>Bedroom</h4>
+      <i class="fas fa-bed"></i>
+      <p>1 Large double bed </p>
+ </div>
+ <div class="shadow" style="margin-bottom: 20px;">
+    <h4>  Additional rooms</h4>
+    <i class="fas fa-warehouse"></i>
+    <p>2 Bathrooms </p>
+ </div>
+ <div class="shadow" style="margin-bottom: 20px;">
+    <h4> Other bedrooms</h4>
+    <i class="fas fa-bed"></i>
+    <p>1 Couch </p>
+ </div>
+    </div>
+</div>
+<div class="flex border-bottom under">
+    <p class="same">SURROUNDING AREA</p>
+    <div class="grid">
+        <p class="childs">Fishing</p>
+        <p class="childs">150 yd to water</p>
+        <p class="childs">450 yd to restaurant</p>
+        <p class="childs">15 mi to airport</p>
+        <p class="childs">150 yd to the beach</p>
+        <p class="childs">2 mi to sports facilities</p>
+    </div>
+</div>
+
+<div class="flex under border-bottom">
+    <p class="same">DESCRIPTION</p>
+    <p style="padding:0 0 0 50px;font-size: 15px;text-align: justify;">Sea Cabins 4C
+        Speckled with those tropical palm trees you've been dreaming about, Sea Cabins cottages are nestled along the seashore in popular Miramar Beach. With a private beach and pavilion just steps away, you're sure to have your toes in the sand each and every day. Couples and families alike return to Sea Cabins year after year to recreate beachside memories.</p>
+</div>
+<div class="flex border-bottom under">
+    <div>
+        <p class="same">CHECK-IN</p>
+        <p class="same">CHECK-OUT</p>
+    </div>
+    <div>
+        <p style="margin-left: 50px;">From 04:00pm</p>
+        <p style="margin-left: 50px;"> Until 10:00am</p>
+    </div>
+</div>
+<div class="flex border-bottom under">
+    <p class="same">HOUSE RULES</p>
+    <div class="flex">
+        <p style="margin: -5px 0 10px 50px;"><i  class="fas fa-times" style="color:red;"></i>  Pets not allowed</p>
+        <p style="margin: -5px 0 10px 50px;"><i  class="fas fa-times" style="color:red;"></i>  Smoking not allowed</p>
+
+    </div>
+</div>
+<div clss="border-bottom">
+
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe id="gmap_canvas" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0">
+
+            </iframe>
+            <a href="https://123movies-to.org"></a><br>
+            <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>
+            <style>#gmap_canvas {overflow:hidden;background:none!important;height:400px;width:700px;margin: 30px 0 20px 150px;border-radius: 10px;}</style>
+        </div>
+</div>
+</div>
+<!-- <div class="under flex border-bottom">
+    <p class="same" style="color:black">Guests</p>
+    <div class="flex">
+        <div class="shadow select">
+            <p>Adults(Ages above 18years)</p>
+           <select name="" id="">
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+           </select>
+        </div>
+        <div class="shadow select"> <p>Childrens (Ages below 18years)</p>
+            <select name="" id="">
+                <option value="1">1 Children</option>
+                <option value="2">2 Childrens </option>
+                <option value="3">3 Childrens </option>
+                <option value="4">4 Childrens </option>
+            </select></div>
+    </div>
+</div> -->
+<div class="border-bottom under">
+<h3>Reviews and Ratings</h3>
+<h1 style="color:purple"> 4.5   <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></h1>
+<p class="same" style="color:black">Very Good</p>
+</div>
+<div class="under">
+    <h4 class="purple"> 1.0  <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></h4>
+    <p class="same" style="color:black;font-size: 13px;">Accidents happen</p>
+    <p style="font-size: 12px;">"Accidents happen- While I checked in to the resort with my wife and 2 kids after a long drive in the snow I was carrying my bags to the room from side gate- the fire alarm was pushed by my back pack accidentally while I turned around to open the door back to my kids which got closed- I explained it to the management- Mr Travis decided to kick and my kids out before we go to the room- I apologized for what happened and told them that it was an accident- but it was not good enough for Mr Travis and he said he had witness that it was intentionally done- why in the world some one do this My kids were crying and scared all hotels were fully booked we it was a nightmare- This could happen to anyone- but there has to be a human with conscious to Understand Thanks to Mr Travis hotel representative for his ignorance decision- After he decided to kick us out he also wanted to refund me for half of my stay-"</p>
+</div>
+<div class="under">
+    <h4 class="purple"> 5.0  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h4>
+    <p class="same" style="color:black;font-size: 13px;">"Excellent"</p>
+    <p style="font-size: 12px;">"We were very impressed with our room and stay. The room had been recently remolded. The tile work in bathroom and kitchen was top notch. This unit had a jacuzzi bath tub with air jets which we used everyday. Nice kitchen layout. It appeared the TV's were smart, found enough where did not need to utilize. We had used RCI points to transfer in. Any interactions with staff was very professional. Awesome fire pits."</p>
+</div>
+<div class="under">
+    <h4 class="purple"> 3.0  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></h4>
+    <p class="same" style="color:black;font-size: 13px;">Accidents happen</p>
+    <p style="font-size: 12px;">"Property was great. The room hand a few issues toilet didn't flush right, the frigrator made noises, lots of noise at 6 am with the guys moving the snow. the DVD player didn't work. Hospitality was the worst no one knew what the other person was saying lots of miss commutations. Our phone got stollen, we left my husband wedding band and a few other items in the room I call the next day and no one has has called us back. wont stay again at this resort."</p>
+</div>
+
+
+
+<div class="count_div" id="display_count_div">
+    <div class="flex" >
+        <i class="fas fa-user" style=" font-size:30px;margin:15px"></i>
+    <div>
+        <p class="fit">Adults</p>
+        <p  class="fit">Age is above 18years</p>
+    </div> 
+<!--  -->
+    <p  class="class1"  onclick="adult(event)">-</p>
+    <p  class="class1">0</p>
+    <p  class="class1"  onclick="adult(event)">+</p>
+   <!--  -->
+  </div>
+  <!--  -->
+    <div class="flex">
+        <i class="fas fa-child" style=" font-size:30px;margin:15px"></i>
+        <div>
+            <p  class="fit">Childrens</p>
+            <p  class="fit">Age is below 17years</p>
+        </div>
+        <!--  -->
+    <p  class="class1" onclick="child(event)">-</p>
+    <p  class="class1">0</p>
+    <p  class="class1"  onclick="child(event)">+</p>
+
+   <!--  -->
+    </div>
+    <!--  -->
+</div>
+
+
+<footer>
+    <div class="end">
+        <div class="e1">
+            <h3>HOMETOGO </h3>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Investors</p>
+            <p>HomeToGo Stock</p>
+            <p>App</p>
+            <p>Insight</p>
+            <p>Press</p>
+            <p>Inspiration</p>
+            <img class="e11" src="https://www.hometogo.com/assets/logo/logo-color.svg"
+            width="60" height="30"">
+        </div>
+        <div  class="e2">
+            <h3>CONTACT</h3>
+            <p>Press</p>
+            <p>Help Centre and Contact</p>
+            <p>Become a Parnter</p>
+            <p>Sign-Up as a Host</p>
+        </div>
+        <div  class="e3">
+            <h3>PRIVACY & TERMS</h3>
+            <p>Terms of Serivce</p>
+            <p>Privacy Policy</p>
+            <p>Legal</p>
+        </div>
+    </div>
+    
+</footer>
+</body>
+</html>
+<script src="details.js"></script>
