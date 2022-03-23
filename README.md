@@ -1,4 +1,4 @@
-## HomeToGo
+## HomeToGo (Clone)
 In this project we have tried to make a look alike clone of HomeToGo Website. With our efforts and the technology stack, that we have learned till now in Unit-3 in Masai School, we were able to clone the front end with similar looks and features.
 
 ## Technologies we used
@@ -20,13 +20,10 @@ Along with that, in order to store user data and property data we also used Loca
 <li>Github : https://github.com/Ankitkumar-tech</li>
 <h2>Sugappa Kuruba</h2>
 <li>Github : https://github.com/sugappa55</li>
+<h2>Chanchal Verma</h2>
+<li>Github : https://github.com/ChanchalS7</li>
 
-
-
-
-
-
-
+## Blog and deploy link:
 
 
 Check the hosted website [here](https://home-to-go.vercel.app/) and read our blog [here](https://medium.com/@vibrantachintya/hometogo-website-construct-week-unit-3-e8be090d79c6).
