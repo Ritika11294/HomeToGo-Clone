@@ -1,7 +1,17 @@
 ## HomeToGo (Clone)
 In this project we have tried to make a look alike clone of HomeToGo Website. With our efforts and the technology stack, that we have learned till now in Unit-3 in Masai School, we were able to clone the front end with similar looks and features.
 
-## Technologies we used
+## About HomeToGo
+HomeToGo is the marketplace with the world's largest selection of vacation rentals, listing millions of offers from thousands of trusted partners, including Booking.com, Vrbo and TripAdvisor. From vacation homes, cabins, beach houses, apartments, condos, house boats, castles, farm stays and everything in between, HomeToGo combines price, destination, dates and amenities to find the perfect accommodation for any trip worldwide.
+
+Founded in 2014, HomeToGo operates local apps & websites in 25 countries across Europe, North America, South America, Australia and Asia-Pacific. HomeToGo also operates brands such as Agriturismo.it, AMIVAC, Casamundo, CaseVacanza.it, EscapadaRural, Tripping.com and Wimdu.
+
+## How does it work?
+Any vacationer who finds your listing on HomeToGo may send an inquiry directly from that platform. The inquiry will be received by WeNeedaVacation and entered into your property’s inquiry history. You will then receive notification (email and/or text) in the same manner as a WeNeedaVacation inquiry.
+
+When you receive an inquiry from someone who initially saw your home on HomeToGo, you should reply with a direct link to your listing on WNAV and explain that your WNAV listing has the latest and most accurate information.
+
+## Technologies we used:
 <ul>
   <li>HTML</li>
   <li>CSS</li>
@@ -28,6 +38,6 @@ Along with that, in order to store user data and property data we also used Loca
 
 Check the hosted website [here](https://home-to-go.vercel.app/) and read our blog [here](https://medium.com/@vibrantachintya/hometogo-website-construct-week-unit-3-e8be090d79c6).
 
-See the screenshots of actual website below.
+## Glimpses of website:
 
 ![](https://raw.githubusercontent.com/vibrantachintya/HomeToGo/master/images/screenshots.gif)
